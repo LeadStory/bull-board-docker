@@ -14,7 +14,7 @@ const config = {
 	REDIS_USE_TLS: process.env.REDIS_USE_TLS,
 	BULL_PREFIX: process.env.BULL_PREFIX || 'bull',
 	BULL_VERSION: process.env.BULL_VERSION || 'BULLMQ',
-	PORT: process.env.PORT || 3000,
+	PORT: process.env.PORT || 3001,
 	PROXY_PATH: PROXY_PATH,
 	USER_LOGIN: process.env.USER_LOGIN,
 	USER_PASSWORD: process.env.USER_PASSWORD,

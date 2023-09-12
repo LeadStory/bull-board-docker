@@ -1,6 +1,6 @@
-FROM node:16.13-alpine
+FROM node:18.16-alpine3.18
 
-WORKDIR /usr/app
+WORKDIR /app
 
 COPY ./package.json .
 COPY ./yarn.lock .
@@ -21,7 +21,7 @@ RUN yarn install
 
 COPY . .
 
-ARG PORT=3000
+ARG PORT=3001
 ENV PORT $PORT
 EXPOSE $PORT
 
